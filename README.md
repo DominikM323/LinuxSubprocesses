@@ -2,8 +2,11 @@
 A practice project for linux, showing communication between processes using signals and different methods of sending data between them.
 
 The program creates 3 subprocesses p1-3: 
+
 p1 reads contents of a file from a given path and sends them to p2 via pipe.
+
 p2 encodes the recieved date to hexadecimal and sends it to p3 via fifo.
+
 p3 reads the data and prints it.
 
 these actions can be affected by sending signals to the subprocesses, causing them to be sent to the parent process which then sends an "effective signal" to the subprocess expected to react to the given command:
