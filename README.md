@@ -1,6 +1,8 @@
 # LinuxSubprocesses
 A practice project for linux, showing communication between processes using signals and different methods of sending data between them.
 
+Made using: C, Linux communication mechanisms (signals, pipe, fifo)
+
 The program creates 3 subprocesses p1-3: 
 
 p1 reads contents of a file from a given path and sends them to p2 via pipe.
