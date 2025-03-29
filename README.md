@@ -19,6 +19,6 @@ these actions can be affected by sending signals to the subprocesses, causing th
 
 //s3 - 18.SIGCONT (effective 12.SIGUSR2): sending sig 18 to any subprocess causes the parent to send sig 12 to all subprocesses, resuming communication between processes.
 
-//s4 - 4.SIGILL, (effective 17.SIGCHLD): sending sig 4 to any subprocess causes the parent to send sig 17 to only p2, causing it to stop converting the data and send it to p3 unconverted.
+//s4 - 4.SIGILL, (effective 17.SIGCHLD): sending sig 4 to any subprocess causes the parent to send sig 17 to p2, causing it to stop/resume converting the data before sending it to p3.
 
 The program in tl.c allows to verify if the data conversion was done correctly.
